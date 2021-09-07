@@ -1,0 +1,60 @@
+
+html {
+    body {
+        padding: 3em;
+
+        #display {
+            .component {
+                border: 1px black solid;
+                display: flex;
+                flex-direction: column;
+                padding: 4em;
+                margin: 2em;
+                min-width: 600px;
+                h1,
+                h3,
+                h4 {
+                    text-align: center;
+                }
+                .icon {
+                    margin: auto;
+                }
+                ul {
+                    margin: auto;
+                }
+            }
+
+            .component.city_infos {
+      
+            }
+
+            .component.day {
+                .hourly_data {
+                    display: grid;
+
+                    @media all and (min-width: 50px) and (max-width: 599px) {
+                        grid-template-columns: repeat(4, 130px);
+                    };
+                    @media all and (min-width: 600px) and (max-width: 1023px) {
+                        grid-template-columns: repeat(5, 130px);
+                    };
+                    @media all and (min-width: 1024px) {
+                        grid-template-columns: repeat(6, 130px);
+                    };
+
+                    text-align: center;
+                    border: none;
+                    margin: auto;
+                    .time-hourly_data {
+                        margin: 2em;
+                        .time,
+                        .elem {
+                            list-style-type: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

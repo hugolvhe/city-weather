@@ -1,0 +1,70 @@
+html body {
+  padding: 3em;
+}
+
+html body #display .component {
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4em;
+  margin: 2em;
+  min-width: 600px;
+}
+
+html body #display .component h1,
+html body #display .component h3,
+html body #display .component h4 {
+  text-align: center;
+}
+
+html body #display .component .icon {
+  margin: auto;
+}
+
+html body #display .component ul {
+  margin: auto;
+}
+
+html body #display .component.day .hourly_data {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  border: none;
+  margin: auto;
+}
+
+@media all and (min-width: 50px) and (max-width: 599px) {
+  html body #display .component.day .hourly_data {
+    -ms-grid-columns: (130px)[4];
+        grid-template-columns: repeat(4, 130px);
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  html body #display .component.day .hourly_data {
+    -ms-grid-columns: (130px)[5];
+        grid-template-columns: repeat(5, 130px);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  html body #display .component.day .hourly_data {
+    -ms-grid-columns: (130px)[6];
+        grid-template-columns: repeat(6, 130px);
+  }
+}
+
+html body #display .component.day .hourly_data .time-hourly_data {
+  margin: 2em;
+}
+
+html body #display .component.day .hourly_data .time-hourly_data .time,
+html body #display .component.day .hourly_data .time-hourly_data .elem {
+  list-style-type: none;
+}
+/*# sourceMappingURL=main.css.map */
