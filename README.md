@@ -4,4 +4,8 @@ Search & diplay the weather by city
 
 ## Usage
 
-`ìndex.html`
+1.  Clone the project :   `git clone <url>`
+2. Start `ìndex.html`
+
+
+
