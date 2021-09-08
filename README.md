@@ -1,6 +1,6 @@
 # Weather-app
 
-Search & diplay the weather by city
+Search & display the weather by city
 
 ## Usage
 
